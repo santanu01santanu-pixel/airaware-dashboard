@@ -203,7 +203,7 @@ if not map_data.empty:
         hover_name="city", hover_data={"aqi_demo": True, "pm25_demo_ugm3": True, "latitude": False, "longitude": False},
         color_continuous_scale=["#35a58b", "#f0c66b", "#d9695d"],
         zoom=3.4, center={"lat": 21.5, "lon": 82.0}, height=430,
-        mapbox_style="open-street-map",
+        map_style="open-street-map",
         labels={"aqi_demo": "Demo AQI", "pm25_demo_ugm3": "Demo PM2.5"},
     )
     fig_map.update_layout(margin=dict(l=0, r=0, t=0, b=0), coloraxis_colorbar_title="Demo AQI")
