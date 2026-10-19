@@ -197,7 +197,7 @@ st.markdown("### Geospatial view")
 st.caption("Markers show city coordinates. Marker colors/values are synthetic demo AQI values, not current conditions.")
 map_data = latest[["city", "latitude", "longitude", "aqi_demo", "pm25_demo_ugm3"]].copy()
 if not map_data.empty:
-    fig_map = px.scatter_mapbox(
+   fig_map = px.scatter_map(
         map_data,
         lat="latitude", lon="longitude", size="aqi_demo", color="aqi_demo",
         hover_name="city", hover_data={"aqi_demo": True, "pm25_demo_ugm3": True, "latitude": False, "longitude": False},
