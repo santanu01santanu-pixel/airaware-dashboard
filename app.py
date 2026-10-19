@@ -206,7 +206,7 @@ if not map_data.empty:
         map_style="open-street-map",
         labels={"aqi_demo": "Demo AQI", "pm25_demo_ugm3": "Demo PM2.5"},
     )
-    fig_map.update_layout(
+fig_map.update_layout(
         margin=dict(l=0, r=0, t=0, b=0),
         coloraxis_colorbar_title="Demo AQI"
     )
