@@ -210,7 +210,7 @@ fig_map.update_layout(
         margin=dict(l=0, r=0, t=0, b=0),
         coloraxis_colorbar_title="Demo AQI"
     )
-    st.plotly_chart(fig_map, use_container_width=True)
+st.plotly_chart(fig_map, use_container_width=True)
 
 st.markdown("### Prediction module — preview")
 st.caption("This deployable starter does not present fabricated model accuracy as a research result. The real-data model will be connected after the dataset and prediction protocol are validated.")
